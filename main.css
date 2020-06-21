@@ -79,10 +79,65 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 85%;
 }
 
+.inputs  {
+    border-radius: 5px;
+    border: hidden;
+    height: 20px;
+    width: 75%;
+    margin: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: hidden;
+    width: 75%;
+    margin: 5px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    resize: none;
+}
+
+#contactBreak {
+    width: 80%;
+    padding-left: 5em;
+    border-left: 2px solid black;
+}
+
+#contactTitle {
+    margin-top: 0;
+}
+
+
+
+.section {
+    display: inline-block;
+    height: 100vh;
+    width: 100%; 
+}
+
+.section:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Nav bar sticky when scrolled */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Mobile Reponsive things */
 @media screen and (max-width:600px){
-   #navbar a {
+   
+    #navbar a {
        display: none;
     } 
 
@@ -110,29 +165,17 @@ i {
         font-size: 1.4rem;
     }
 
-    
+    #contact {
+        flex-direction: column;
+    }
 
+
+    #contactBreak {
+        border: none;
+        padding: 0;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
 }
-
-.section {
-    display: inline-block;
-    height: 100vh;
-    width: 100%; 
-}
-
-.section:nth-of-type(even) {
-    background-color: lightgrey;
-}
-
-h2 {
-    text-align: center;
-    font-size: 3em;
-}
-
-/* Nav bar sticky when scrolled */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
