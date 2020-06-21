@@ -1,0 +1,138 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.column {
+    display: flex;
+    float: left;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide Mobile Menu icon */
+i {
+    visibility: hidden;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #051937;
+}
+
+#navbar a {
+
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.landing {
+    display: flex;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);}   
+
+#landing-title {
+    color: black;
+    font-size: 4rem;
+    letter-spacing: .10px;
+    text-align: center;
+    font-family: Permanent Marker;
+
+}
+
+
+
+#landing-detail {
+    color: black;
+    font-size: 2rem;
+    letter-spacing: .10px;
+    text-align: center;
+    font-family: Permanent Marker; 
+}
+
+#landing-graphics {
+    width: 25rem;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:600px){
+   #navbar a {
+       display: none;
+    } 
+
+    .landing {
+        flex-direction: column;
+    }
+
+    #landing-graphics {
+        width: 80%;
+    }
+
+    i {
+        visibility: visible;
+        float: right;
+        color: white;
+        position: static;
+        margin: 2%;
+    }
+
+    #landing-title {
+        right: 0;
+    }
+    #landing-detail {
+        right: 0;
+        font-size: 1.4rem;
+    }
+
+    
+
+}
+
+.section {
+    display: inline-block;
+    height: 100vh;
+    width: 100%; 
+}
+
+.section:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Nav bar sticky when scrolled */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
