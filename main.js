@@ -8,7 +8,7 @@ var menu = document.getElementById('menu');
 menu.addEventListener('click', function(){
     
     console.log('menu button clicked');
-    nav.classList.toggle('menuClicked');
+    menu.classList.toggle('menuClicked');
 });
 
 
