@@ -34,6 +34,11 @@ i {
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #008793;
 }
 
 
@@ -111,6 +116,9 @@ i {
 }
 .card .container {
     text-align: center;
+}
+.card p {
+    padding-bottom: 10px;
 }
 
 /* Contact Section  */
