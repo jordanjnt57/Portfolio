@@ -15,7 +15,7 @@ html, body {
 }
 
 /* Hide Mobile Menu icon */
-i {
+.nav i {
     visibility: hidden;
 }
 
@@ -121,6 +121,16 @@ i {
     padding-bottom: 10px;
 }
 
+/* Resume Section */
+.resume {
+    display: flex;
+    flex-direction: row;
+}
+.resume a {
+    font-size: 15rem;
+    margin: auto;
+    color: inherit;
+}
 /* Contact Section  */
 #contact {
     display: flex;
@@ -148,11 +158,13 @@ textarea {
 }
 #contactBreak {
     width: 80%;
+    height: 90%;
     padding-left: 5em;
     border-left: 2px solid black;
 }
 #contactTitle {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -195,7 +207,7 @@ h2 {
         width: 80%;
     }
 
-    i {
+    .nav i {
         visibility: visible;
         float: right;
         color: white;
@@ -210,6 +222,18 @@ h2 {
         right: 0;
         font-size: 1.4rem;
     }
+
+    .resume {
+        display: flex;
+        flex-direction: column;
+    }
+    .resume a {
+        display: inherit;
+        font-size: 10rem;
+        margin: 10px;
+        text-align: center;
+    }
+ 
 
     #contact {
         flex-direction: column;
