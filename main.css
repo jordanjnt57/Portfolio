@@ -25,6 +25,7 @@ html, body {
     padding: 0;
     overflow: hidden;
     background-color: #051937;
+    z-index: 100;
 }
 
 #navbar a {
@@ -100,7 +101,12 @@ html, body {
 
 
 /* Project Cards */
+#cardContainer{
+    display: flex;
+    flex-direction: row;
+}
 .card {
+    text-align: center;
     margin: auto;
     transition: 0.3s;
     width: 30%;
@@ -114,12 +120,11 @@ html, body {
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 }
-.card .container {
-    text-align: center;
-}
+
 .card p {
     padding-bottom: 10px;
 }
+
 
 /* Resume Section */
 .resume {
@@ -215,6 +220,11 @@ h2 {
         margin: 2%;
     }
 
+    h2 {
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+
     #landing-title {
         right: 0;
     }
@@ -223,6 +233,20 @@ h2 {
         font-size: 1.4rem;
     }
 
+    #portfolio {
+        height: 140%;
+    }
+
+    #cardContainer {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 1em;
+        width: 50%;
+    }
+    
+
     .resume {
         display: flex;
         flex-direction: column;
@@ -230,8 +254,9 @@ h2 {
     .resume a {
         display: inherit;
         font-size: 10rem;
-        margin: 10px;
+        margin: auto;
         text-align: center;
+        padding: 10px;
     }
  
 
