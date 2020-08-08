@@ -82,7 +82,7 @@ html, body {
     padding: 7px;
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 3px #999;
+    box-shadow: 2px 3px 8px #999;
 }
 #btn:hover {
     background-color: White;
